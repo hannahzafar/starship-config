@@ -17,4 +17,6 @@ disabled = true
 [cmd_duration]
 disabled = true
 
+[lua]
+disabled = true
 
