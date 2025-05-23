@@ -6,6 +6,7 @@ add_newline = true
 
 [directory]
 truncation_length = 5
+truncate_to_repo = false # Show full path in a repo
 
 # Disable the package module, hiding it from the prompt completely
 [package]
