@@ -21,3 +21,5 @@ disabled = true
 [lua]
 disabled = true
 
+[pixi]
+disabled = true
