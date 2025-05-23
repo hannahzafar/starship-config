@@ -13,7 +13,7 @@ disabled = false
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-disabled = true
+# disabled = true
 
 [python]
 disabled = true
