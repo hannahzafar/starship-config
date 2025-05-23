@@ -25,4 +25,5 @@ disabled = true
 disabled = true
 
 [pixi]
-disabled = true
+format = ' [$symbol(\($environment\) )]($style)'
+detect_folders = []
