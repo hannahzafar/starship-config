@@ -5,6 +5,7 @@
 add_newline = true 
 
 [directory]
+style = 'bold blue'
 truncation_length = 5
 truncate_to_repo = false # Show full path in a repo
 
