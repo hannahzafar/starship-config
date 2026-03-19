@@ -10,14 +10,14 @@ truncation_length = 5
 truncate_to_repo = false # Show full path in a repo
 
 [shell]
-disabled = false
+# disabled = false
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-# disabled = true
+format = 'is [$version]($style) '
 
 [python]
-disabled = true
+format = 'via [${symbol}${py_target}\($virtualenv\)]($style) '
 
 [cmd_duration]
 disabled = true
