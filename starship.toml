@@ -19,6 +19,16 @@ format = 'is [$version]($style) '
 [python]
 format = 'via [${symbol}${py_target}\($virtualenv\)]($style) '
 
+[custom.hpc_python]
+description = "Show loaded Python module from HPC environment"
+# This command extracts just the python module (e.g., python/3.10.2) from the LOADEDMODULES list
+command = "echo $LOADEDMODULES | grep -o -E 'python/[^:]*' | head -n 1"
+# Only run and show this if 'python/' is actually inside the LOADEDMODULES variable
+when = "echo $LOADEDMODULES | grep -q 'python/'"
+# Format it similarly to the default Python module
+format = "via [🐍 $output ]($style)"
+style = "yellow bold"
+
 [cmd_duration]
 disabled = true
 
